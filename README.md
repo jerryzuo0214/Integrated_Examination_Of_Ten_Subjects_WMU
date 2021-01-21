@@ -8,15 +8,15 @@
 
   #####################开发者名单（不分先后）#####################
 
-数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
+数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
 
-数据库构建 @Xingzhenqiu    [![GitHub主页](https://img.shields.io/badge/Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
+数据库构建 @Xingzhenqiu    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
  
-数据库构建 @yy-skr   [![GitHub主页](https://img.shields.io/badge/Developed_by-yy_skr-blue)](https://github.com/yy-skr)
+数据库构建 @yy-skr   [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-yy_skr-blue)](https://github.com/yy-skr)
  
-界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Developed_by-linandxi-yellow)](https://github.com/linandxi)
+界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Interface_Developed_by-linandxi-yellow)](https://github.com/linandxi)
  
-后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
+后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Application_Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
  
  #############################################################
 
