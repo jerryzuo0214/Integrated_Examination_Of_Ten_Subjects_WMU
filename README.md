@@ -9,13 +9,9 @@
 ##开发者名单（不分先后）
 
 数据库构建 @MorganLYJ
-
-数据库构建 @Xingzhenqiu  
-
+数据库构建 @Xingzhenqiu
 数据库构建 @yy-skr
-
-界面美化与前端设计 @linandxi    
-
+界面美化与前端设计 @linandxi
 后端开发与调试 @jerryzuo0214
 
 ** 主要功能模块有：** 查询题目、题库测试和练习，错题练习，收藏题目练习，考试记录等功能。
