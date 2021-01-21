@@ -1,6 +1,6 @@
 # 温州医科大学 十门联考刷题软件
 
-:grin:感谢原架构开发者`萧利丹` [![GitHub主页](https://img.shields.io/badge/xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
+:grin:感谢原架构开发者`萧利丹` [![GitHub主页](https://img.shields.io/badge/Originated by-xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
 
 :clap:感谢`温州医科大学历届学长学姐`为整套题库做出的贡献，以及`学长J`前期开发的几个版本软件
 
