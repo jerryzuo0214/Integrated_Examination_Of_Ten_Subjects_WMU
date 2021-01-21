@@ -7,11 +7,15 @@
 :+1:感谢第一临床医学院信息与工程学院 2017级 临床医学（5+3）一体化 1班的各位协作组成员们
 
   #####################开发者名单（不分先后）#####################
-  ##                  数据库构建 @MorganLYJ
-  ##                 数据库构建 @Xingzhenqiu[![GitHub主页](https://img.shields.io/badge/Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
-  ##                   数据库构建 @yy-skr
-  ##               界面美化与前端设计 @linandxi
-  ##               后端开发与调试 @jerryzuo0214
+数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
+
+数据库构建 @Xingzhenqiu    [![GitHub主页](https://img.shields.io/badge/Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
+ 
+数据库构建 @yy-skr   [![GitHub主页](https://img.shields.io/badge/Developed_by-yy_skr-blue)](https://github.com/yy-skr)
+ 
+界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Developed_by-linandxi-yellow)](https://github.com/linandxi)
+ 
+后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
   #############################################################
 
 ** 主要功能模块有：** 查询题目、题库测试和练习，错题练习，收藏题目练习，考试记录等功能。
