@@ -77,37 +77,38 @@ public class DetailActivity extends AppCompatActivity {
 
     private void loadData() {
         Cursor cursor = ToolHelper.loadDB(this, "select * from que where _id=" + qid);
-
         cursor.moveToFirst();
-        kind = cursor.getString(cursor.getColumnIndex("kind"));
-        String choiceA = "A."+cursor.getString(cursor.getColumnIndex("choiceA"));
-        String choiceB = "B."+cursor.getString(cursor.getColumnIndex("choiceB"));
-        String choiceC = "C."+cursor.getString(cursor.getColumnIndex("choiceC"));
-        String choiceD = "D."+cursor.getString(cursor.getColumnIndex("choiceD"));
-        String choiceE = "E."+cursor.getString(cursor.getColumnIndex("choiceE"));
-        StringBuffer sb = new StringBuffer();
-        if (choiceA != "null") {
-            sb.append(choiceA + "\n");
+        if (cursor.moveToFirst()) {
+            kind = cursor.getString(cursor.getColumnIndex("kind"));
+            String choiceA = "A." + cursor.getString(cursor.getColumnIndex("choiceA"));
+            String choiceB = "B." + cursor.getString(cursor.getColumnIndex("choiceB"));
+            String choiceC = "C." + cursor.getString(cursor.getColumnIndex("choiceC"));
+            String choiceD = "D." + cursor.getString(cursor.getColumnIndex("choiceD"));
+            String choiceE = "E." + cursor.getString(cursor.getColumnIndex("choiceE"));
+            StringBuffer sb = new StringBuffer();
+            if (choiceA != "null") {
+                sb.append(choiceA + "\n");
+            }
+            if (choiceB != "null") {
+                sb.append(choiceB + "\n");
+            }
+            if (choiceC != "null") {
+                sb.append(choiceC + "\n");
+            }
+            if (choiceD != "null") {
+                sb.append(choiceD + "\n");
+            }
+            if (choiceE != "null") {
+                sb.append(choiceE + "\n");
+            }
+            choice = sb.toString();
+            que = cursor.getString(cursor.getColumnIndex("que"));
+            type = cursor.getString(cursor.getColumnIndex("type"));
+            answer = cursor.getString(cursor.getColumnIndex("answer"));
+            source = cursor.getString(cursor.getColumnIndex("source"));
+            detail = cursor.getString(cursor.getColumnIndex("detail"));
         }
-        if (choiceB != "null") {
-            sb.append(choiceB + "\n");
         }
-        if (choiceC != "null") {
-            sb.append(choiceC + "\n");
-        }
-        if (choiceD != "null") {
-            sb.append(choiceD + "\n");
-        }
-        if (choiceE != "null") {
-            sb.append(choiceE + "\n");
-        }
-        choice = sb.toString();
-        que = cursor.getString(cursor.getColumnIndex("que"));
-        type = cursor.getString(cursor.getColumnIndex("type"));
-        answer = cursor.getString(cursor.getColumnIndex("answer"));
-        source = cursor.getString(cursor.getColumnIndex("source"));
-        detail = cursor.getString(cursor.getColumnIndex("detail"));
-    }
 
     private void initData() {
         setTitle(kind);

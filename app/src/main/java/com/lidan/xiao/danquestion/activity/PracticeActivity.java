@@ -40,12 +40,12 @@ import java.util.Date;
 import java.util.List;
 
 public class PracticeActivity extends AppCompatActivity implements View.OnClickListener {
-    private int tab;
+    private int tab,progress_total=0;
     private String table,content,from;
     private TextView tvTitle;
-    private Cursor cursor;
+    private Cursor cursor, progress_dist;
     private boolean isCollect=false;
-    private int num;
+    private int num,progress_num;
     private int index=0,index1;
     public static List<String> anList;
     private String source;
@@ -133,16 +133,35 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         //获取SQLite数据库中题库数据
         if(tab==MyTag.QUE)
             cursor = ToolHelper.loadDB(this,
-                    "select que.* from "+table+" where " + field + "='" + value + "' order by type");
+                    "select que.* from "+table+" where " + field + "='" + value + "' order by _id");
         else
             cursor = ToolHelper.loadDB(this,
-                    "select que.* from "+table+" and " + field + "='" + value + "' order by type");
+                    "select que.* from "+table+" and " + field + "='" + value + "' order by _id");
         num = cursor.getCount();
-        //答案List初始化
-        anList = new ArrayList<>();
-        for (int i = 0; i < num; i++) {
-            anList.add("");
-        }
+        //答案List初始化,if数据库中dist表为空，则创建新的anlist，最后结束时把anlist赋值到dist，若dist列不为空则把dist加载到anlist中,最后把dist表更新为最新的list
+            progress_dist = ToolHelper.loadDB(this,
+                    "select * from dist where " + field + "='" + value + "' order by _id");
+            progress_num = progress_dist.getCount();
+            if (progress_num==0){
+                                    anList = new ArrayList<>();
+                                    for (int i = 0; i < num; i++) { anList.add("");}
+                                }
+            else{
+                anList = new ArrayList<>();
+                for(progress_dist.moveToFirst();!progress_dist.isAfterLast();progress_dist.moveToNext())
+                {
+                    String progress_item = progress_dist.getString(progress_dist.getColumnIndex("dist_d"));
+                    anList.add(progress_item);
+                    progress_total++;
+                }
+                if(progress_total!=num) {
+                    for(int j = progress_total; j<num;j++) {
+                        anList.add("");
+                         }
+                    }
+                }
+
+
 
         //设置进度条
         pb = findViewById(R.id.pb);
@@ -181,6 +200,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         };
         vf.setAdapter(adapter);
         moveToItem(index1);
+
     }
     //答题卡设置
     private void createView(int pos) {

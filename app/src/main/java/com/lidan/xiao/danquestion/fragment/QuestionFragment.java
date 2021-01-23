@@ -26,7 +26,6 @@ import com.lidan.xiao.danquestion.activity.QuestionActivity;
 import com.lidan.xiao.danquestion.hepler.MyTag;
 import com.lidan.xiao.danquestion.hepler.ToolHelper;
 
-
 @SuppressLint("ValidFragment")
 public class QuestionFragment extends Fragment implements View.OnClickListener {
     private int tab;
@@ -39,6 +38,8 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     private SimpleCursorAdapter adapter;
     private Cursor cursor;
     private FloatingActionButton fabtest,fabprac;
+
+
 
     @SuppressLint("ValidFragment")
     public QuestionFragment(int tab) {
