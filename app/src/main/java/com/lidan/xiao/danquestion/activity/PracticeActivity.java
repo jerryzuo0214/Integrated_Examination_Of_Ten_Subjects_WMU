@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.os.SystemClock;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -18,12 +17,10 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
 import android.widget.AdapterViewFlipper;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Chronometer;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -34,8 +31,6 @@ import com.lidan.xiao.danquestion.fragment.QuestionFragment;
 import com.lidan.xiao.danquestion.hepler.MyTag;
 import com.lidan.xiao.danquestion.hepler.ToolHelper;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -59,7 +54,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
     private View root;
     private TextView tvQue, tvDetail, tvAns, tvYou;
     private CheckBox cb1, cb2, cb3, cb4,cb5;
-    private ImageView imgCollect,imgCard;
+    private ImageView imgCollect,imgCard, imgTrash;
     private SharedPreferences sp;
     private Button bt2;
 
@@ -116,6 +111,9 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
 
     @SuppressLint("SetTextI18n")
     private void initView() {
+       //初始化清除历史记录按钮
+        imgTrash =findViewById(R.id.img_trash);
+        imgTrash.setOnClickListener(this);
         //初始化收藏按钮
         imgCollect =findViewById(R.id.img_collect);
         imgCollect.setOnClickListener(this);
@@ -429,7 +427,31 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                 intent.putExtra("from",2);
                 startActivityForResult(intent,MyTag.CARD);
                 break;
+            case R.id.img_trash: //清除历史记录
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("是否确定清空已做历史记录？" +
+                        "这将导致历史记录清空并退出练习");
+                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        moveToTrash();
+                        PracticeActivity.this.finish();
+                    }
+                });
+                builder.show();
+                break;
+
         }
+    }
+
+    private void moveToTrash(){
+        ToolHelper.excuteDB(this,"update dist set dist_d='' ");
+
     }
 
     @Override

@@ -37,7 +37,13 @@
                     android:layout_margin="8dp"
                     android:src="@drawable/quecard"/>
 
-            <Chronometer
+                <ImageView
+                    android:id="@+id/img_trash"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    app:srcCompat="@drawable/ic_popup_disk_full" />
+
+                <Chronometer
                 android:id="@+id/mytime"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
@@ -56,8 +62,10 @@
                     android:layout_width="32dp"
                     android:layout_height="32dp"
                     android:src="@drawable/next"/>
+
             </LinearLayout>
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 <include layout="@layout/que_content"/>
+
 </LinearLayout>
