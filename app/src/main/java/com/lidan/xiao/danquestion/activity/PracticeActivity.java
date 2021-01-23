@@ -114,7 +114,6 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
 
     @SuppressLint("SetTextI18n")
     private void initView() {
-
         //初始化收藏按钮
         imgCollect =findViewById(R.id.img_collect);
         imgCollect.setOnClickListener(this);
@@ -294,7 +293,9 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
             anList.set(pos, you);
             //判断对错
             if (you.equals(answer)) {
-                moveCorrect();
+                //moveCorrect();
+                saveWrong(sb.toString());
+                disableChecked(pos);
             } else {
                 //错误则保存错题，显示答案
                 saveWrong(sb.toString());

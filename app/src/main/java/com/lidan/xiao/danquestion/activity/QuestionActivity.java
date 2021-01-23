@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterViewFlipper;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Chronometer;
 import android.widget.ImageView;
@@ -47,15 +48,16 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     private int score = 0,index=0;
     public static List<String> anList;
     private String source;
-    private String qid, type, que, A, B, C, D, answer, detail;
+    private String qid, type, que, A, B, C, D, E, answer, detail;
     private ImageView imgPre, imgNext;
     private AdapterViewFlipper vf;
     private BaseAdapter adapter;
     private ProgressBar pb;
     private View root;
     private TextView tvQue, tvDetail, tvAns, tvYou;
-    private CheckBox cb1, cb2, cb3, cb4;
+    private CheckBox cb1, cb2, cb3, cb4, cb5;
     private ImageView imgCollect,imgCard;
+    private Button bt3;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -179,10 +181,17 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             cb2 = root.findViewById(R.id.cb_choice2);
             cb3 = root.findViewById(R.id.cb_choice3);
             cb4 = root.findViewById(R.id.cb_choice4);
+            cb5 = root.findViewById(R.id.cb_choice5);
             tvAns = root.findViewById(R.id.tv_answer1);
             tvDetail = root.findViewById(R.id.tv_detail1);
             tvYou = root.findViewById(R.id.tv_you);
-
+        //提交
+        bt3= root.findViewById(R.id.bt_record4);
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isAnswerTrue(index);
+            }});
         //获取数据
         cursor.moveToPosition(pos);
         type = cursor.getString(cursor.getColumnIndex("type"));
@@ -191,6 +200,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         B =  "B."+cursor.getString(cursor.getColumnIndex("choiceB"));
         C =  "C."+cursor.getString(cursor.getColumnIndex("choiceC"));
         D =  "D."+cursor.getString(cursor.getColumnIndex("choiceD"));
+        E =  "E."+cursor.getString(cursor.getColumnIndex("choiceE"));
         answer = cursor.getString(cursor.getColumnIndex("answer"));
         detail = cursor.getString(cursor.getColumnIndex("detail"));
         qid = cursor.getString(cursor.getColumnIndex("_id"));
@@ -200,18 +210,22 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         cb2.setText(B);
         cb3.setText(C);
         cb4.setText(D);
+        cb5.setText(E);
         cb1.setButtonDrawable(R.drawable.cb);
         cb2.setButtonDrawable(R.drawable.cb);
         cb3.setButtonDrawable(R.drawable.cb);
         cb4.setButtonDrawable(R.drawable.cb);
+        cb5.setButtonDrawable(R.drawable.cb);
         cb1.setEnabled(true);
         cb2.setEnabled(true);
         cb3.setEnabled(true);
         cb4.setEnabled(true);
+        cb5.setEnabled(true);
         cb1.setChecked(false);
         cb2.setChecked(false);
-       cb3.setChecked(false);
+        cb3.setChecked(false);
         cb4.setChecked(false);
+        cb5.setChecked(false);
         tvAns.setText("【正确答案】" + answer);
         tvDetail.setText("【解析】" + detail);
         if (anList.get(pos).equals("")) {
@@ -257,19 +271,22 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     //判断选择答案对错
     private void isAnswerTrue(int pos) {
-        if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked()) {
+        if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked()|| cb5.isChecked()) {
             //获取答案
             StringBuffer sb = new StringBuffer();
             if (cb1.isChecked()) sb.append("A");
             if (cb2.isChecked()) sb.append("B");
             if (cb3.isChecked()) sb.append("C");
             if (cb4.isChecked()) sb.append("D");
+            if (cb5.isChecked()) sb.append("E");
             String you = sb.toString();
             //保存答案
             anList.set(pos, you);
             //判断对错
             if (you.equals(answer)) {
-                moveCorrect();
+               // moveCorrect();
+                saveWrong(sb.toString());
+                disableChecked(pos);
             } else {
                 //错误则保存错题，显示答案
                 saveWrong(sb.toString());
@@ -300,11 +317,13 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         if (answer.contains("B")) cb2.setButtonDrawable(R.drawable.cb_right);
         if (answer.contains("C")) cb3.setButtonDrawable(R.drawable.cb_right);
         if (answer.contains("D")) cb4.setButtonDrawable(R.drawable.cb_right);
+        if (answer.contains("E")) cb5.setButtonDrawable(R.drawable.cb_right);
         //设置为不可答题
         cb1.setEnabled(false);
         cb2.setEnabled(false);
         cb3.setEnabled(false);
         cb4.setEnabled(false);
+        cb5.setEnabled(false);
     }
 
     //保存错题

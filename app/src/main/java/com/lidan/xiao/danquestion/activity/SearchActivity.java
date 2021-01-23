@@ -71,7 +71,7 @@ public class SearchActivity extends AppCompatActivity implements View.OnClickLis
     private void searchResult(final String text) {
           cursor = ToolHelper.loadDB(this,"select _id,que from que where que like '%"+text
                 +"%' or choiceA like '%"+text+"%' or choiceB like'%"+text
-                +"%' or choiceC like'%"+text+"%' or choiceD like'%"+text+"%' limit "+limit);
+                +"%' or choiceC like'%"+text+"%' or choiceD like'%"+text+"%' or choiceE like'%"+text+"%' limit "+limit);
 
         num=cursor.getCount();
         if(num>0) {

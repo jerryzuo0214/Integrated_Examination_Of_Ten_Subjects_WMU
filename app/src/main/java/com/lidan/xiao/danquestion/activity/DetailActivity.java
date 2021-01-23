@@ -84,6 +84,7 @@ public class DetailActivity extends AppCompatActivity {
         String choiceB = "B."+cursor.getString(cursor.getColumnIndex("choiceB"));
         String choiceC = "C."+cursor.getString(cursor.getColumnIndex("choiceC"));
         String choiceD = "D."+cursor.getString(cursor.getColumnIndex("choiceD"));
+        String choiceE = "E."+cursor.getString(cursor.getColumnIndex("choiceE"));
         StringBuffer sb = new StringBuffer();
         if (choiceA != "null") {
             sb.append(choiceA + "\n");
@@ -96,6 +97,9 @@ public class DetailActivity extends AppCompatActivity {
         }
         if (choiceD != "null") {
             sb.append(choiceD + "\n");
+        }
+        if (choiceE != "null") {
+            sb.append(choiceE + "\n");
         }
         choice = sb.toString();
         que = cursor.getString(cursor.getColumnIndex("que"));
