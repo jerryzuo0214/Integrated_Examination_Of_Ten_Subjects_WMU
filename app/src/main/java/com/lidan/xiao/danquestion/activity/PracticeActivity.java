@@ -34,6 +34,8 @@ import com.lidan.xiao.danquestion.fragment.QuestionFragment;
 import com.lidan.xiao.danquestion.hepler.MyTag;
 import com.lidan.xiao.danquestion.hepler.ToolHelper;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -139,14 +141,14 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                     "select que.* from "+table+" and " + field + "='" + value + "' order by _id");
         num = cursor.getCount();
         //答案List初始化,if数据库中dist表为空，则创建新的anlist，最后结束时把anlist赋值到dist，若dist列不为空则把dist加载到anlist中,最后把dist表更新为最新的list
-            progress_dist = ToolHelper.loadDB(this,
+        progress_dist = ToolHelper.loadDB(this,
                     "select * from dist where " + field + "='" + value + "' order by _id");
-            progress_num = progress_dist.getCount();
-            if (progress_num==0){
+        progress_num = progress_dist.getCount();
+        if (progress_num==0){
                                     anList = new ArrayList<>();
                                     for (int i = 0; i < num; i++) { anList.add("");}
                                 }
-            else{
+        else{
                 anList = new ArrayList<>();
                 for(progress_dist.moveToFirst();!progress_dist.isAfterLast();progress_dist.moveToNext())
                 {
@@ -156,12 +158,9 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                 }
                 if(progress_total!=num) {
                     for(int j = progress_total; j<num;j++) {
-                        anList.add("");
-                         }
+                        anList.add(""); }
                     }
-                }
-
-
+            }
 
         //设置进度条
         pb = findViewById(R.id.pb);
@@ -311,6 +310,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
             String you = sb.toString();
             //保存答案
             anList.set(pos, you);
+            ToolHelper.excuteDB(this,"update dist set dist_d='" + you + "' where _id ='" + qid + "' ");
             //判断对错
             if (you.equals(answer)) {
                 //moveCorrect();
