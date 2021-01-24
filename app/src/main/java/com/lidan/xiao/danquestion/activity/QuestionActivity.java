@@ -49,7 +49,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     public static List<String> anList;
     private String source;
     private String qid, type, que, A, B, C, D, E, answer, detail;
-    private ImageView imgPre, imgNext;
+    private ImageView imgPre, imgNext,imgTrash;
     private AdapterViewFlipper vf;
     private BaseAdapter adapter;
     private ProgressBar pb;
@@ -94,6 +94,9 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     @SuppressLint("SetTextI18n")
     private void initView() {
+       //隐藏清空按钮
+        imgTrash =findViewById(R.id.img_trash);
+        imgTrash.setVisibility(View.GONE);//隐藏按钮
         //初始化收藏按钮
         imgCollect =findViewById(R.id.img_collect);
         imgCollect.setOnClickListener(this);

@@ -429,8 +429,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.img_trash: //清除历史记录
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("是否确定清空已做历史记录？" +
-                        "这将导致历史记录清空并退出练习");
+                builder.setTitle("清空历史记录并退出练习?");
                 builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -440,18 +439,20 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         moveToTrash();
+                        SharedPreferences.Editor editor=sp.edit();
+                        editor.putInt(from+"index",0);
+                        editor.commit();
                         PracticeActivity.this.finish();
                     }
                 });
                 builder.show();
                 break;
-
         }
     }
 
+    //清空历史记录
     private void moveToTrash(){
         ToolHelper.excuteDB(this,"update dist set dist_d='' ");
-
     }
 
     @Override
