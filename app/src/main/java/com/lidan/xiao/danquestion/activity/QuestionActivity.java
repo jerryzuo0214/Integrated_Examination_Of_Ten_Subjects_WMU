@@ -4,9 +4,11 @@ import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -190,11 +192,45 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             tvYou = root.findViewById(R.id.tv_you);
         //提交
         bt3= root.findViewById(R.id.bt_record4);
-        bt3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isAnswerTrue(index);
-            }});
+        final int pos_d = pos + 1;
+        final int[] wmi = {0};
+        bt3.setText("提交");
+        if(anList.get(index).contains("A")||anList.get(index).contains("B")||anList.get(index).contains("C")||anList.get(index).contains("D")||anList.get(index).contains("E")){
+            wmi[0] =0;
+            bt3.setText("下一题");
+            bt3.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    vf.showNext();
+                }});
+        }//之前做过的就不再重复做了
+        else {
+            bt3.setOnClickListener(new View.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.M)
+                @Override
+                public void onClick(View v) {
+                    isAnswerTrue(index);
+                    if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked() || cb5.isChecked()) {
+                        wmi[0] = 1;
+                    }//选择了选项才能下一题
+                    if (wmi[0] == 1) {
+                        bt3.setText("下一题");
+                        bt3.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                vf.showNext();
+                            }
+                        });
+                    }
+                    if (index == num-1) {
+                        bt3.setText("最后一题");
+                        final_desicion();
+                        final_desicion();
+                    }
+
+                }
+            });
+        }
         //获取数据
         cursor.moveToPosition(pos);
         type = cursor.getString(cursor.getColumnIndex("type"));
@@ -262,14 +298,36 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                         break;
                 }
                     if (startX - endX > min) {
-                        vf.showNext();
-                    }else if (endX - startX > min) {
                         vf.showPrevious();
+                    }else if (endX - startX > min) {
+                        vf.showNext();
                 }
                 return true;
             }
         });
+    }
 
+    private void final_desicion() //下面也有按钮事件，交卷
+    {
+        if (index >= num - 1) {
+            if(!isFirst) {
+                isAnswerTrue(index);
+                isFirst = true;
+            }else {
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setMessage("是否结束测试？");
+                builder.setNegativeButton("取消", null);
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        saveExam();
+                    }
+                });
+                builder.show();
+            }
+        } else {
+            isAnswerTrue(index);
+        }
     }
 
     //判断选择答案对错
@@ -287,8 +345,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             anList.set(pos, you);
             //判断对错
             if (you.equals(answer)) {
-               // moveCorrect();
-                saveWrong(sb.toString());
+                moveCorrect();
                 disableChecked(pos);
             } else {
                 //错误则保存错题，显示答案
@@ -304,7 +361,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     private void moveCorrect() {
         score++;
         tvScore.setText("得分：" + String.valueOf(score )+ "/" +String.valueOf( num));
-        vf.showNext();
+       // vf.showNext();
         int c=ToolHelper.loadDB(this,"select _id from wrong where qid="+qid).getCount();
         if(c>0)
         ToolHelper.excuteDB(this, "delete from wrong where qid=" +qid);

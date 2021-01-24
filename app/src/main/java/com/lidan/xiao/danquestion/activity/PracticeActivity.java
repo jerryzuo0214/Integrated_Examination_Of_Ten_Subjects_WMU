@@ -6,7 +6,9 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.os.Build;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -202,7 +204,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
 
     }
     //答题卡设置
-    private void createView(int pos) {
+    private void createView(final int pos) {
         root = LayoutInflater.from(PracticeActivity.this).inflate(R.layout.queitem, null);
         tvQue = root.findViewById(R.id.tv_que1);
         cb1 = root.findViewById(R.id.cb_choice1);
@@ -215,11 +217,49 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         tvYou= root.findViewById(R.id.tv_you);
        //提交
         bt2= root.findViewById(R.id.bt_record4);
-        bt2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                isAnswerTrue(index);
-            }});
+        final int pos_d = pos + 1;
+        final int[] wmi = {0};
+        bt2.setText("提交");
+        if(anList.get(index).contains("A")||anList.get(index).contains("B")||anList.get(index).contains("C")||anList.get(index).contains("D")||anList.get(index).contains("E")){
+            wmi[0] =0;
+            bt2.setText("下一题");
+            bt2.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    vf.showNext();
+                }});
+             }//之前做过的就不再重复做了
+        else {
+            bt2.setOnClickListener(new View.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.M)
+                @Override
+                public void onClick(View v) {
+                    isAnswerTrue(index);
+                    if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked() || cb5.isChecked()) {
+                        wmi[0] = 1;
+                    }//选择了选项才能下一题
+                    if (wmi[0] == 1) {
+                        bt2.setText("下一题");
+                        bt2.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                vf.showNext();
+                            }
+                        });
+                    }
+                    if (pos_d == num) {
+                        bt2.setText("最后一题");
+                        bt2.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                isAnswerTrue(index);
+                            }
+                        });
+                    }
+
+                }
+            });
+        }
         //获取数据
         cursor.moveToPosition(pos);
         type = cursor.getString(cursor.getColumnIndex("type"));
@@ -277,7 +317,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         root.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                float startX = v.getWidth() / 2, endX = v.getWidth() / 2, min = 100;
+                float startX = v.getWidth()/2, endX = v.getWidth()/2, min = 100;
                    switch (event.getAction()) {
                        case MotionEvent.ACTION_DOWN:
                            startX = event.getX();
@@ -312,8 +352,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
             ToolHelper.excuteDB(this,"update dist set dist_d='" + you + "' where _id ='" + qid + "' ");
             //判断对错
             if (you.equals(answer)) {
-                //moveCorrect();
-                saveWrong(sb.toString());
+                moveCorrect();
                 disableChecked(pos);
             } else {
                 //错误则保存错题，显示答案
@@ -327,7 +366,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
     //移除正确题目
     @SuppressLint("SetTextI18n")
     private void moveCorrect() {
-        vf.showNext();
+        //vf.showNext();
         int c=ToolHelper.loadDB(this,"select _id from wrong where qid="+qid).getCount();
         if(c>0)
             ToolHelper.excuteDB(this, "delete from wrong where qid=" +qid);

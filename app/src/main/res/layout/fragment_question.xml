@@ -18,18 +18,20 @@
         <TextView
             android:id="@+id/top_source"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
             android:layout_weight="1"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/top_kind"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="29dp"
             android:layout_weight="1"
             android:gravity="center"
             android:textAllCaps="false"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
 
     </LinearLayout>
     <ScrollView

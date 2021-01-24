@@ -7,11 +7,28 @@
         <item
             android:id="@+id/nav_exam"
             android:icon="@drawable/exam"
-            android:title="测试记录" />
+            android:title="测试成绩历史记录" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/settings"
-            android:title="关于应用" />
+            android:title="应用信息与使用说明" />
+        <item
+            android:id="@+id/clear_all"
+            android:icon="@drawable/ic_popup_disk_full"
+            android:title="【!】清空已做记录"
+            android:textColor="@color/colorAccent" />
+        <item
+            android:id="@+id/clear_collect"
+            android:icon="@drawable/ic_popup_disk_full"
+            android:title="【!】清空收藏夹" />
+        <item
+            android:id="@+id/clear_wrong"
+            android:icon="@drawable/ic_popup_disk_full"
+            android:title="【!】清空错题本" />
+        <item
+        android:id="@+id/clear_exam"
+        android:icon="@drawable/ic_popup_disk_full"
+        android:title="【!】清空测试记录" />
     </group>
 
 </menu>

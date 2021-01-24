@@ -40,7 +40,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     private FloatingActionButton fabtest,fabprac;
 
 
-
+    public QuestionFragment() {}
     @SuppressLint("ValidFragment")
     public QuestionFragment(int tab) {
         this.tab = tab;

@@ -3,13 +3,16 @@ package com.lidan.xiao.danquestion;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -19,9 +22,11 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.lidan.xiao.danquestion.activity.ExamActivity;
+import com.lidan.xiao.danquestion.activity.PracticeActivity;
 import com.lidan.xiao.danquestion.activity.SettingActivity;
 import com.lidan.xiao.danquestion.fragment.QuestionFragment;
 import com.lidan.xiao.danquestion.fragment.SearchFragment;
+import com.lidan.xiao.danquestion.hepler.ToolHelper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
     private TextView tv1, tv2, tv3, tv4;
@@ -85,11 +90,89 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent1=new Intent(this, SettingActivity.class);
                 startActivity(intent1);
                 break;
+            case R.id.clear_all://清除已做
+                AlertDialog.Builder builder = new AlertDialog.Builder(this);
+                builder.setTitle("清空已做记录（全清）?");
+                builder.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ClearAll();
+                    }
+                });
+                builder.show();
+                break;
+            case R.id.clear_collect://清空收藏夹
+                AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
+                builder1.setTitle("清空收藏夹?");
+                builder1.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder1.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                         ClearCollect();
+                    }
+                });
+                builder1.show();
+                break;
+            case R.id.clear_wrong://清空错题本
+                AlertDialog.Builder builder2 = new AlertDialog.Builder(this);
+                builder2.setTitle("清空错题本?");
+                builder2.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder2.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        ClearWrong();
+                    }
+                });
+                builder2.show();
+                break;
+            case R.id.clear_exam://清空考试记录
+                AlertDialog.Builder builder3 = new AlertDialog.Builder(this);
+                builder3.setTitle("清空考试记录?");
+                builder3.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                });
+                builder3.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                         ClearExam();
+                    }
+                });
+                builder3.show();
+                break;
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+    private void ClearAll(){
+        ToolHelper.excuteDB(this,"update dist set dist_d='' ");
+    }
+    private void ClearCollect(){
+        ToolHelper.excuteDB(this,"DELETE FROM collection ");
+    }
+    private void ClearWrong(){
+        ToolHelper.excuteDB(this,"DELETE FROM wrong ");
+    }
+    private void ClearExam(){
+        ToolHelper.excuteDB(this,"DELETE FROM exam ");
+    }
+
+
 //设置默认fragment
     private void setDefaultFragment() {
         FragmentManager manager = getFragmentManager();
