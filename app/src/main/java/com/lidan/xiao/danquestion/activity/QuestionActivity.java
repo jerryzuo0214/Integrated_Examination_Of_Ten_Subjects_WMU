@@ -197,12 +197,25 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         bt3.setText("提交");
         if(anList.get(index).contains("A")||anList.get(index).contains("B")||anList.get(index).contains("C")||anList.get(index).contains("D")||anList.get(index).contains("E")){
             wmi[0] =0;
-            bt3.setText("下一题");
-            bt3.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    vf.showNext();
-                }});
+            if (pos_d == num) {
+                bt3.setText("最后一题");
+                bt3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        final_desicion();
+                        final_desicion();
+                    }
+                });
+            }
+            else {
+                bt3.setText("下一题");
+                bt3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        vf.showNext();
+                    }
+                });
+            }
         }//之前做过的就不再重复做了
         else {
             bt3.setOnClickListener(new View.OnClickListener() {

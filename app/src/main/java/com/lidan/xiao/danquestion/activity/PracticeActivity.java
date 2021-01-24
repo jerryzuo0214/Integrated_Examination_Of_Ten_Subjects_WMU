@@ -222,12 +222,16 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         bt2.setText("提交");
         if(anList.get(index).contains("A")||anList.get(index).contains("B")||anList.get(index).contains("C")||anList.get(index).contains("D")||anList.get(index).contains("E")){
             wmi[0] =0;
-            bt2.setText("下一题");
-            bt2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    vf.showNext();
-                }});
+            if (pos_d == num) {bt2.setText("最后一题");}
+            else {
+                bt2.setText("下一题");
+                bt2.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        vf.showNext();
+                    }
+                });
+                }
              }//之前做过的就不再重复做了
         else {
             bt2.setOnClickListener(new View.OnClickListener() {
@@ -247,7 +251,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                             }
                         });
                     }
-                    if (pos_d == num) {
+                    if (index == num-1) {
                         bt2.setText("最后一题");
                         bt2.setOnClickListener(new View.OnClickListener() {
                             @Override
