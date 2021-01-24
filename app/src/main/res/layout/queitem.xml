@@ -14,30 +14,34 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp" />
+
         <CheckBox
             android:id="@+id/cb_choice1"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
             android:textColor="@color/colorPrimary" />
+
         <CheckBox
             android:id="@+id/cb_choice2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
             android:textColor="@color/colorPrimary" />
+
         <CheckBox
             android:id="@+id/cb_choice3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
             android:textColor="@color/colorPrimary" />
+
         <CheckBox
             android:id="@+id/cb_choice4"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
@@ -45,7 +49,7 @@
 
         <CheckBox
             android:id="@+id/cb_choice5"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
@@ -76,8 +80,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:background="@drawable/bt"
-            android:padding="16dp"
+            android:background="@drawable/button_shape"
+            android:padding="8dp"
             android:text="提交"
             android:textColor="@color/white" />
 

@@ -277,19 +277,20 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         root.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                float startX=v.getWidth()/2,endX=v.getWidth()/2,min=100;
-                switch (event.getAction()){
-                    case MotionEvent.ACTION_DOWN:
-                        startX=event.getX();
-                    case MotionEvent.ACTION_UP:
-                        endX=event.getX();
-                        break;
-                }
-                if (startX - endX > min) {
-                    vf.showNext();
-                }else if (endX - startX > min) {
-                    vf.showPrevious();
-                }
+                float startX = v.getWidth() / 2, endX = v.getWidth() / 2, min = 100;
+                   switch (event.getAction()) {
+                       case MotionEvent.ACTION_DOWN:
+                           startX = event.getX();
+
+                       case MotionEvent.ACTION_UP:
+                           endX = event.getX();
+                           break;
+                   }
+                    if (startX - endX > min) {
+                        vf.showPrevious();
+                    } else if (endX - startX > min) {
+                        vf.showNext();
+                    }
                 return true;
             }
         });
