@@ -38,7 +38,7 @@ import java.util.List;
 
 public class PracticeActivity extends AppCompatActivity implements View.OnClickListener {
     private int tab,progress_total=0;
-    private String table,content,from;
+    private String table,content,from, value_dist, field_dist;
     private TextView tvTitle;
     private Cursor cursor, progress_dist;
     private boolean isCollect=false;
@@ -127,6 +127,8 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         String field = QuestionFragment.field;
         String value = QuestionFragment.value;
         source = value;
+        value_dist=value;
+        field_dist=field;
         //设置标题
         tvTitle = findViewById(R.id.tv_title);
         tvTitle.setText(source);
@@ -452,7 +454,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
 
     //清空历史记录
     private void moveToTrash(){
-        ToolHelper.excuteDB(this,"update dist set dist_d='' ");
+        ToolHelper.excuteDB(this,"update dist set dist_d='' where " + field_dist + "='" + value_dist + "' ");
     }
 
     @Override
