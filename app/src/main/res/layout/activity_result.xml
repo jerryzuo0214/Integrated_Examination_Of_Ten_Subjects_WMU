@@ -56,14 +56,15 @@
             android:textColor="@color/gray"
             android:textSize="16sp" />
     </LinearLayout>
+
     <Button
         android:id="@+id/bt_record"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/button_shape"
         android:padding="16dp"
-        android:background="@drawable/bt"
-        android:textColor="@color/white"
         android:text="查看考试记录"
-        android:layout_margin="8dp"/>
+        android:textColor="@color/white" />
 </LinearLayout>
 

@@ -70,12 +70,12 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
 //加载分类题库
     private void tab2() {
         tv1.setTextColor(getResources().getColor(R.color.gray));
-        tv2.setTextColor(getResources().getColor(R.color.colorAccent));
+        tv2.setTextColor(getResources().getColor(R.color.colorPrimary_overlay));
         queList("kind");
     }
 //加载来源题库
     private void tab1() {
-        tv1.setTextColor(getResources().getColor(R.color.colorAccent));
+        tv1.setTextColor(getResources().getColor(R.color.colorPrimary_overlay));
         tv2.setTextColor(getResources().getColor(R.color.gray));
         queList("source");
     }
@@ -116,7 +116,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
                             TextView tv1=itemView.findViewById(R.id.tv_item);
                             tv1.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
                         }
-                        tv.setTextColor(getResources().getColor(R.color.colorAccent));
+                        tv.setTextColor(getResources().getColor(R.color.overlay));
                         itemView=view;
                         field =type;
                         value=cursor.getString(cursor.getColumnIndex(type));

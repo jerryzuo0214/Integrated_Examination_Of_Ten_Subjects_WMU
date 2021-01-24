@@ -122,7 +122,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
         imgCard.setOnClickListener(this);
 
         findViewById(R.id.mytime).setVisibility(View.GONE);
-
+        findViewById(R.id.tv_num).setVisibility(View.GONE);
         //获取题目集关键字
         String field = QuestionFragment.field;
         String value = QuestionFragment.value;
@@ -281,7 +281,6 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                    switch (event.getAction()) {
                        case MotionEvent.ACTION_DOWN:
                            startX = event.getX();
-
                        case MotionEvent.ACTION_UP:
                            endX = event.getX();
                            break;
@@ -294,7 +293,6 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                 return true;
             }
         });
-
     }
 
     //判断选择答案对错

@@ -3,12 +3,14 @@ package com.lidan.xiao.danquestion.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.lidan.xiao.danquestion.R;
 
 public class SettingActivity extends AppCompatActivity {
-
+    private TextView TW_4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,8 @@ public class SettingActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        TW_4=findViewById(R.id.tw4);
+        TW_4.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
     @Override

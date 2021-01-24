@@ -23,12 +23,16 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:orientation="horizontal">
+
     <EditText
         android:id="@+id/sv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:textColor="@color/white"
-        android:layout_weight="1"/>
+        android:textColorLink="#81D8FF"
+        android:textCursorDrawable="@drawable/text_cursor_material"
+        android:theme="@style/MyEditText"/>
     <ImageView
         android:id="@+id/img_search"
         android:layout_width="wrap_content"

@@ -54,16 +54,16 @@ public class ExamActivity extends AppCompatActivity {
                         new int[]{R.id.tv_item_title, R.id.tv_item_score, R.id.tv_item_time, R.id.tv_item_date},
                         CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER);
                 lv.setAdapter(adapter);
-                lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                        cursor.moveToPosition(position);
-                        int select = cursor.getInt(cursor.getColumnIndex("_id"));
-                        Intent intent = new Intent(ExamActivity.this, DetailActivity.class);
-                        intent.putExtra("qid", select);
-                        startActivity(intent);
-                    }
-                });
+                //lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                 //   @Override
+                 //    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 //       cursor.moveToPosition(position);
+                 //      int select = cursor.getInt(cursor.getColumnIndex("_id"));
+                 //      Intent intent = new Intent(ExamActivity.this, DetailActivity.class);
+                 //      intent.putExtra("qid", select);
+                 //      startActivity(intent);
+                 //  }
+                 // });
                 isLv = true;
             } else {//如果lv已经创建，数据改变则重新加载lv
                 adapter.changeCursor(cursor);
