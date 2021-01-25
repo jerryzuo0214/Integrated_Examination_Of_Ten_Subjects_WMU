@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.MainActivity"
+    tools:context="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
     <LinearLayout

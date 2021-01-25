@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.fragment;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment;
 
 import android.app.Fragment;
 import android.content.Intent;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.SearchActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SearchActivity;
 
 /**
  * Created by Administrator on 2018/1/7.

@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
 
 public class ResultActivity extends AppCompatActivity {
     private String title,date,time,score;

@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.fragment;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -19,11 +19,11 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.PracticeActivity;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.QuestionActivity;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler.MyTag;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler.ToolHelper;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.PracticeActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.QuestionActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.MyTag;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.ToolHelper;
 
 @SuppressLint("ValidFragment")
 public class QuestionFragment extends Fragment implements View.OnClickListener {

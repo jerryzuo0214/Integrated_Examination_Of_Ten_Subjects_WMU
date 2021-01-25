@@ -1,9 +1,9 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -17,7 +17,7 @@ import java.io.InputStream;
 
 public class SQLiteRelease {
     //SD卡下的目录
-    private final String DATABASE_PATH =  "/data/data/com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU/";
+    private final String DATABASE_PATH =  "/data/data/com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU/";
     //数据库名
     private final String DATABASE_FILENAME = "question.db3";
     //这个context是必需的，没有context，怎么都不能实现数据库的拷贝操作；

@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler;
 
 import android.content.Context;
 import android.database.Cursor;

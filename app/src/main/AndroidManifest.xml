@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU">
+    package="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.MainActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,26 +23,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.SearchActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.QuestionActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.QuestionActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.ResultActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.ResultActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.DetailActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.DetailActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.SettingActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SettingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.ExamActivity"
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.ExamActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.PracticeActivity"
+        <activity android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.PracticeActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.CardActivity"></activity>
+        <activity android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.CardActivity"></activity>
     </application>
 
 </manifest>

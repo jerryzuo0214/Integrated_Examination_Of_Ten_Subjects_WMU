@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity;
 
 import android.database.Cursor;
 import android.os.Bundle;
@@ -11,9 +11,9 @@ import android.widget.CursorAdapter;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler.ToolHelper;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view.MyListView;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.ToolHelper;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.view.MyListView;
 
 /**
  * Created by Administrator on 2018/1/7.

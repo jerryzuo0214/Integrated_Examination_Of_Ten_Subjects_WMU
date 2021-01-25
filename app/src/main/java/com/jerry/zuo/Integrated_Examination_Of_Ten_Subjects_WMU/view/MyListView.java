@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;

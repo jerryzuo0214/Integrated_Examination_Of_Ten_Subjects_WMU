@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view.MyListView
+            <com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.view.MyListView
                 android:id="@+id/lv_que"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="12dp"
         android:src="@drawable/test"
-        app:backgroundTint="@color/oro_overlay"
+        app:backgroundTint="@color/orm_overlay"
         app:backgroundTintMode="src_in" />
 
     <android.support.design.widget.FloatingActionButton
@@ -81,6 +81,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="12dp"
         android:src="@drawable/exam"
-        app:backgroundTint="@color/orm_overlay" />
+        app:backgroundTint="@color/oro_overlay" />
 </LinearLayout>
 </FrameLayout>

@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU;
 
 import org.junit.Test;
 

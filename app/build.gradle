@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU"
+        applicationId "com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU"
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1

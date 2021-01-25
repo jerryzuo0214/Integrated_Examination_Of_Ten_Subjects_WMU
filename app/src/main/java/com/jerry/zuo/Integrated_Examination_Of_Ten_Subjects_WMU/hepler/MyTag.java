@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler;
 
 /**
  * Created by Administrator on 2018/1/11.

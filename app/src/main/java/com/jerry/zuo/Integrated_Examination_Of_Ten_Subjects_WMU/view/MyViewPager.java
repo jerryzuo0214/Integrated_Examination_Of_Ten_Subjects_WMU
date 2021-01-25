@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.view;
 
 import android.content.Context;
 import android.support.v4.view.ViewPager;

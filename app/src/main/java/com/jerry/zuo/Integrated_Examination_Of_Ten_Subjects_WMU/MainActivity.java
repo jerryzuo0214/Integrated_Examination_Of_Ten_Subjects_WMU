@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
@@ -18,11 +18,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.ExamActivity;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.SettingActivity;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.fragment.QuestionFragment;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.fragment.SearchFragment;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler.ToolHelper;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.ExamActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SettingActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment.QuestionFragment;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment.SearchFragment;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.ToolHelper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, NavigationView.OnNavigationItemSelectedListener {
     private TextView tv1, tv2, tv3, tv4;

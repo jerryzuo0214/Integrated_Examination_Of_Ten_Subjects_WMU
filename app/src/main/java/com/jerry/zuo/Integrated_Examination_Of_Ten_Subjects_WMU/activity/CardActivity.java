@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +12,14 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.hepler.MyTag;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.MyTag;
 
 public class CardActivity extends AppCompatActivity {
 private GridView gv;
 private int select,num,from;
 private TextView selectView=null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

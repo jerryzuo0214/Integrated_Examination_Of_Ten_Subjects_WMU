@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.MainActivity">
+    tools:context="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.MainActivity">
 
     <TextView
         android:id="@+id/tv_sv"

@@ -1,4 +1,4 @@
-package com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity;
+package com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.R;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
 
 public class SettingActivity extends AppCompatActivity {
     private TextView TW_4;
