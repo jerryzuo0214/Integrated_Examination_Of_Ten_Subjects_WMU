@@ -4,7 +4,7 @@
 
 当然这个软件的编写源自编者们的一时兴起，因为编者及本班的同学将要面临十门联考，这个软件才匆匆诞生，若有错误请不吝在项目开源地址提交issue，我们会争取在大版本更新时解决这些问题
 
-错误及建议提交网址[![GitHubissue](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
+错误及建议提交网址[GitHubissue](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 ```
 ### Markdown
 
