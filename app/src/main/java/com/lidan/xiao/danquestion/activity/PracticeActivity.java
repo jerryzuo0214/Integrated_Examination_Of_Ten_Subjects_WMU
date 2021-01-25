@@ -116,6 +116,7 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
        //初始化清除历史记录按钮
         imgTrash =findViewById(R.id.img_trash);
         imgTrash.setOnClickListener(this);
+
         //初始化收藏按钮
         imgCollect =findViewById(R.id.img_collect);
         imgCollect.setOnClickListener(this);
@@ -125,6 +126,13 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
 
         findViewById(R.id.mytime).setVisibility(View.GONE);
         findViewById(R.id.tv_num).setVisibility(View.GONE);
+        if(content=="收藏"){
+            findViewById(R.id.img_trash).setVisibility(View.GONE);
+        }
+        if(content=="错题"){
+            findViewById(R.id.img_trash).setVisibility(View.GONE);
+        }
+
         //获取题目集关键字
         String field = QuestionFragment.field;
         String value = QuestionFragment.value;
@@ -260,7 +268,6 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                             }
                         });
                     }
-
                 }
             });
         }
