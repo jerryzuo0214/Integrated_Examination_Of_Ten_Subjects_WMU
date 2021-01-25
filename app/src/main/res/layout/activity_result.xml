@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context="com.lidan.xiao.danquestion.activity.ResultActivity">
+    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.ResultActivity">
 
 <include layout="@layout/layout_top2"/>
 

@@ -6,14 +6,15 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg"
     android:orientation="vertical"
-    tools:context="com.lidan.xiao.danquestion.MainActivity">
+    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.MainActivity">
 
     <TextView
         android:id="@+id/tv_sv"
-        android:layout_width="match_parent"
+        android:layout_width="341dp"
         android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginTop="220dp"
         android:layout_marginRight="8dp"
         android:background="@color/white"
         android:drawableLeft="@drawable/search1"

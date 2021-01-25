@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.lidan.xiao.danquestion.view.MyListView
+            <com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view.MyListView
                 android:id="@+id/lv_que"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -69,15 +69,18 @@
         android:id="@+id/fab_prac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
         android:src="@drawable/test"
-        app:backgroundTint="@color/blue" />
+        app:backgroundTint="@color/oro_overlay"
+        app:backgroundTintMode="src_in" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginBottom="12dp"
         android:src="@drawable/exam"
-        app:backgroundTint="@color/colorPrimary" />
+        app:backgroundTint="@color/orm_overlay" />
 </LinearLayout>
 </FrameLayout>

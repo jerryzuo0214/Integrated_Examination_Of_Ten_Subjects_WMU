@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lidan.xiao.danquestion.activity.ExamActivity">
+    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.activity.ExamActivity">
     <include layout="@layout/layout_top1"/>
     <ScrollView
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-<com.lidan.xiao.danquestion.view.MyListView
+<com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.view.MyListView
     android:id="@+id/lv_record"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>

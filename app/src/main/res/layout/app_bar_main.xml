@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lidan.xiao.danquestion.MainActivity">
+    tools:context="com.jerry.zuo.Integrated_Examation_Of_Ten_Subjects_WMU.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

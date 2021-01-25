@@ -13,10 +13,10 @@
             android:id="@+id/tv_que1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:padding="8dp"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp"
             android:clickable="true"
+            android:padding="8dp"
+            android:textColor="@color/colorPrimary_overlay"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <CheckBox
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary_overlay"
             android:textSize="16sp" />
 
         <CheckBox
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary_overlay"
             android:textSize="16sp" />
 
         <CheckBox
@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary_overlay"
             android:textSize="16sp" />
 
         <CheckBox
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary_overlay"
             android:textSize="16sp" />
 
         <CheckBox
@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorPrimary_overlay"
             android:textSize="16sp" />
 
         <Button
