@@ -300,6 +300,12 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         cb3.setChecked(false);
         cb4.setChecked(false);
         cb5.setChecked(false);
+        //初始化复选框
+        cb1.setOnClickListener(this);
+        cb2.setOnClickListener(this);
+        cb3.setOnClickListener(this);
+        cb4.setOnClickListener(this);
+        cb5.setOnClickListener(this);
         tvAns.setText("【正确答案】" + answer);
         tvDetail.setText("【解析】" + detail);
         if (anList.get(pos).equals("")) {
@@ -536,6 +542,46 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                 intent.putExtra("num",num);
                 intent.putExtra("from",1);
                 startActivityForResult(intent,MyTag.CARD);
+                break;
+            case R.id.cb_choice1:
+                if(cb1.isChecked()&&type.contains("单") ){
+                    cb2.setChecked(false);
+                    cb3.setChecked(false);
+                    cb4.setChecked(false);
+                    cb5.setChecked(false);
+                }
+                break;
+            case R.id.cb_choice2:
+                if(cb2.isChecked() &&type.contains("单")){
+                    cb1.setChecked(false);
+                    cb3.setChecked(false);
+                    cb4.setChecked(false);
+                    cb5.setChecked(false);
+                }
+                break;
+            case R.id.cb_choice3:
+                if(cb3.isChecked()&&type.contains("单") ){
+                    cb1.setChecked(false);
+                    cb2.setChecked(false);
+                    cb4.setChecked(false);
+                    cb5.setChecked(false);
+                }
+                break;
+            case R.id.cb_choice4:
+                if(cb4.isChecked() &&type.contains("单")){
+                    cb1.setChecked(false);
+                    cb2.setChecked(false);
+                    cb3.setChecked(false);
+                    cb5.setChecked(false);
+                }
+                break;
+            case R.id.cb_choice5:
+                if(cb5.isChecked()&&type.contains("单") ){
+                    cb1.setChecked(false);
+                    cb2.setChecked(false);
+                    cb3.setChecked(false);
+                    cb4.setChecked(false);
+                }
                 break;
         }
     }
