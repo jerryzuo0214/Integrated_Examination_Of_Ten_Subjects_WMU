@@ -25,7 +25,8 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/cb_choice2"
@@ -33,7 +34,8 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/cb_choice3"
@@ -41,7 +43,8 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/cb_choice4"
@@ -49,7 +52,8 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
 
         <CheckBox
             android:id="@+id/cb_choice5"
@@ -57,7 +61,8 @@
             android:layout_height="wrap_content"
             android:button="@drawable/cb"
             android:padding="8dp"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
 
         <Button
             android:id="@+id/bt_record4"

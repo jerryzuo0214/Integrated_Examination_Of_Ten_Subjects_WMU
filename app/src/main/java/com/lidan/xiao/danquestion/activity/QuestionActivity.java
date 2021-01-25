@@ -47,7 +47,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
     private Cursor cursor;
     private boolean isCollect=false,isFirst=false;
     private int num;
-    private int score = 0,index=0;
+    private int score = 0,index=0,pdl=0,pdll=0;
     public static List<String> anList;
     private String source;
     private String qid, type, que, A, B, C, D, E, answer, detail;
@@ -193,16 +193,15 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
         //提交
         bt3= root.findViewById(R.id.bt_record4);
         final int pos_d = pos + 1;
-        final int[] wmi = {0};
+        final int[] wmi = {0,0};
         bt3.setText("提交");
         if(anList.get(index).contains("A")||anList.get(index).contains("B")||anList.get(index).contains("C")||anList.get(index).contains("D")||anList.get(index).contains("E")){
             wmi[0] =0;
             if (pos_d == num) {
-                bt3.setText("最后一题");
+                bt3.setText("结束考试");
                 bt3.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        final_desicion();
                         final_desicion();
                     }
                 });
@@ -218,31 +217,60 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
             }
         }//之前做过的就不再重复做了
         else {
-            bt3.setOnClickListener(new View.OnClickListener() {
-                @RequiresApi(api = Build.VERSION_CODES.M)
-                @Override
-                public void onClick(View v) {
-                    isAnswerTrue(index);
-                    if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked() || cb5.isChecked()) {
-                        wmi[0] = 1;
-                    }//选择了选项才能下一题
-                    if (wmi[0] == 1) {
-                        bt3.setText("下一题");
-                        bt3.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                vf.showNext();
-                            }
-                        });
-                    }
-                    if (index == num-1) {
-                        bt3.setText("最后一题");
+            if (index == num-1) {
+            bt3.setText("最后一题，提交");
+                wmi[0] = 0;
+                bt3.setOnClickListener(new View.OnClickListener() {
+                    @RequiresApi(api = Build.VERSION_CODES.M)
+                    @Override
+                    public void onClick(View v) {
                         final_desicion();
-                        final_desicion();
+                        pdll=1;
+                        if (pdll==1) {
+                            bt3.setText("结束考试");
+                            bt3.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    final_desicion();
+                                    pdll=0;
+                                }
+                            });
+                        }
                     }
+                });
+
+
+
 
                 }
-            });
+            else{
+                bt3.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        isAnswerTrue(index);
+                        if (cb1.isChecked() || cb2.isChecked() || cb3.isChecked() || cb4.isChecked() || cb5.isChecked()) {
+                            wmi[0] = 1;
+                        }//选择了选项才能下一题
+                        if (wmi[0] == 1) {
+                            bt3.setText("下一题");
+                            bt3.setOnClickListener(new View.OnClickListener() {
+                                @Override
+                                public void onClick(View v) {
+                                    vf.showNext();
+                                }
+                            });
+                        }
+                    }
+                });
+            }
+
+
+
+
+
+
+
+
         }
         //获取数据
         cursor.moveToPosition(pos);
@@ -322,7 +350,7 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
 
     private void final_desicion() //下面也有按钮事件，交卷
     {
-        if (index >= num - 1) {
+        //if (index >= num - 1) {
             if(!isFirst) {
                 isAnswerTrue(index);
                 isFirst = true;
@@ -336,11 +364,10 @@ public class QuestionActivity extends AppCompatActivity implements View.OnClickL
                         saveExam();
                     }
                 });
-                builder.show();
-            }
-        } else {
-            isAnswerTrue(index);
-        }
+                builder.show(); }
+        //} else {
+        //    isAnswerTrue(index);
+        //}
     }
 
     //判断选择答案对错
