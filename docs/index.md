@@ -7,8 +7,8 @@
 错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 
 ### 关于题目来源
-```markdown
-:smile_cat: 题库来源于第一临床医学院2011级临床11班所编十门联考习题册
+
+ `:smile_cat:` 题库来源于第一临床医学院2011级临床11班所编十门联考习题册
 
 :clap: 以下是十门联考的相关科目与编者，在此向各位学长学姐们致敬
 
@@ -35,7 +35,7 @@
 :eyes:注1：组建数据库时我们发现有部分题目缺少答案或者所属科目有误！
 
 :sweat_smile:注2：虽然但是~为了便于与纸质版对照，我们并未改变题目的顺序，敬请谅解！
-```
+
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
