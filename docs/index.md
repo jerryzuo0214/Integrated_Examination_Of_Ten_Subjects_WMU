@@ -6,6 +6,9 @@
 
 错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 
+## 太长不看
+* [关于题目来源](#关于题目来源)
+
 ### 关于题目来源
 
 :smile_cat: 题库来自第一临床医学院(信息与工程学院)  2011级临床医学11班所编十门联考习题册
