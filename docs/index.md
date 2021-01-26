@@ -7,7 +7,7 @@
 错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 
 ### 关于题目来源
-```markdown
+
 # 题库来源于第一临床医学院2011级临床11班所编十门联考习题册
 ## 以下是十门联考的相关科目与编者，在此向各位学长学姐们致敬
 ### （一）组织胚胎学（编者：饶志恒、李井）
@@ -21,7 +21,7 @@
 ### （九）微生物学（编者：欧展帆 沈梦 金恩特 诸秀秀 金晶锐）
 ### （十）药理学（编者：徐凯丽 蒋越 姚媛媛 张珊）
 注：在制作电子题库时我们的确发现其中有部分题目缺少答案或者所属科目有误，但为了便于与纸质版对照，我们并未改变题目的顺序，敬请留意！
-```
+
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
