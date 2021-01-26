@@ -263,4 +263,4 @@
 :airplane:当然这个软件在J学长软件的基础上增加了`题目解析`等新功能，并且也开源了工程，所以也欢迎所有使用本软件的同学，并预祝考试顺利！
 
 >此外您若是发现程序有什么BUG或题目问题，请不吝提交建议，也欢迎各位有志之士加入软件的开发中，为温医学子们做出力所能及的贡献！
->>错误及建议提交网址[          GitHub Issue ](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
+>>错误及建议递交[          GitHub Issue ](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
