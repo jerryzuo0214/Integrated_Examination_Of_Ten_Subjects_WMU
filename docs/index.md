@@ -26,9 +26,7 @@
 
 * [:octocat: 开发者名单 ](#开发者名单)
 
-* [:floppy_disk: 项目基本信息 ](#项目基本信息)
-
-* [:family: 关于我们可爱的大家庭还有点东西想说 ](#关于我们可爱的大家庭还有点东西想说)
+* [:family: 关于本程序以及我们大家庭还有点话想说 ](#关于本程序以及我们大家庭还有点话想说)
 
 ---
 ## 软件使用指南
@@ -225,42 +223,41 @@
 ---
 ## 开发者名单
 
-数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
+后端开发与调试 @jerryzuo0214   
 
-数据库构建 @Xingzhenqiu    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
+[![GitHub主页](https://img.shields.io/badge/Application_Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
+
+数据库构建 @MorganLYJ    
+
+[![GitHub主页](https://img.shields.io/badge/Database_Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
+
+数据库构建 @Xingzhenqiu   
+
+[![GitHub主页](https://img.shields.io/badge/Database_Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
  
-数据库构建 @yy-skr   [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-yy_skr-blue)](https://github.com/yy-skr)
+数据库构建 @yy-skr   
+
+[![GitHub主页](https://img.shields.io/badge/Database_Developed_by-yy_skr-blue)](https://github.com/yy-skr)
  
-界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Interface_Developed_by-linandxi-yellow)](https://github.com/linandxi)
- 
-后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Application_Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
+界面美化与前端设计 @linandxi   
+
+[![GitHub主页](https://img.shields.io/badge/Interface_Developed_by-linandxi-yellow)](https://github.com/linandxi)
 
 :airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
 
+---
+## 关于本程序以及我们大家庭还有点话想说
 
+:grin:感谢原架构开发者@萧利丹 [![GitHub主页](https://img.shields.io/badge/Originated_by-xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
 
+:clap:感谢`温州医科大学历届学长学姐`为整套题库做出的贡献，以及`学长J`前期开发的几个版本软件
 
+:+1:感谢`第一临床医学院信息与工程学院 2017级 临床医学（5+3）一体化 1班`的各位协作组成员们
 
+ps:这个软件一开始是想写给本班同学们的，希望各位村里小屁孩十门联考都能取得好成绩！
 
+当然这个软件在J学长软件的基础上增加了`题目解析`等新功能，并且也开源了工程，所以也欢迎所有使用本软件的同学，并预祝考试顺利！
 
+此外您若是发现程序有什么BUG或题目问题，请不吝提交建议，也欢迎各位有志之士加入软件的开发中，为温医学子们做出力所能及的贡献！
 
-
-
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
+错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
