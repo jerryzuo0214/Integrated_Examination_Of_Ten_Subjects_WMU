@@ -10,6 +10,7 @@
 ```
 错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 
+---
 ## 目录导航
 * [-> 软件使用指南 <-](#软件使用指南)
     * [图标名解](#图标名解)
