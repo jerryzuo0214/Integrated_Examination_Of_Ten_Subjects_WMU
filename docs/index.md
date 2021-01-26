@@ -42,7 +42,7 @@
 注2：虽然但是~为了便于与纸质版对照，我们并未改变题目的顺序，敬请谅解！:sweat_smile:
 
 ### 软件使用指南
-![test](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/blob/master/img/Inkedallin_LI.jpg)
+![test](https://s3.ax1x.com/2021/01/26/sjUY1s.jpg)
 
 
 
