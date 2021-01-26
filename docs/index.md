@@ -71,15 +71,25 @@
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUnXt.png" width="40" alt="提交"/>:heavy_check_mark:提交，点此提交本题答案或结束考试
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUkkD.png" width="250" alt="按钮_提交"/>:heavy_check_mark:多功能按钮_提交，当本题未作答时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUkkD.png" width="250" alt="按钮_提交"/>
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUZpd.png" width="250" alt="按钮_下一题"/>:heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
+:heavy_check_mark:多功能按钮_提交，当本题未作答时显示
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUM0f.png" width="250" alt="按钮_最后一题"/>:heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUZpd.png" width="300" alt="按钮_下一题"/>
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUm6I.png" width="250" alt="按钮_最后一题，提交"/>:heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题时显示
+:heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
 
-<img src="https://s3.ax1x.com/2021/01/26/sjNqTU.png" width="250" alt="按钮_结束考试"/>:heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUM0f.png" width="300" alt="按钮_最后一题"/>
+
+:heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
+
+<img src="https://s3.ax1x.com/2021/01/26/sjUm6I.png" width="300" alt="按钮_最后一题，提交"/>
+
+:heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题时显示
+
+<img src="https://s3.ax1x.com/2021/01/26/sjNqTU.png" width="300" alt="按钮_结束考试"/>
+
+:heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
 
 #### 启动界面
 
