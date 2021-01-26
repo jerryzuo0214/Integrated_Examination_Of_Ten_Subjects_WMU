@@ -6,9 +6,10 @@
 
 错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
 
-## 太长不看
+## 太长不看（点击跳转不同章节）
+* [-> 软件使用指南 <-](#软件使用指南)
 * [关于题目来源](#关于题目来源)
-* [->软件使用指南<-](#软件使用指南)
+
 
 ### 关于题目来源
 
@@ -40,6 +41,16 @@
 
 注2：虽然但是~为了便于与纸质版对照，我们并未改变题目的顺序，敬请谅解！:sweat_smile:
 
+### 软件使用指南
+![test](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/blob/master/img/Inkedallin_LI.jpg)
+
+
+
+
+
+
+
+
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
@@ -63,11 +74,3 @@ Syntax highlighted code block
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
