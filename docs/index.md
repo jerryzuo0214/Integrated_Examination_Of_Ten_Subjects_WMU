@@ -12,7 +12,7 @@
 
 ---
 ## 目录导航
-* [软件使用指南 :airplane:](#软件使用指南)
+* [:airplane: 软件使用指南](#软件使用指南)
     * [图标名解](#图标名解)
     * [启动界面](#启动界面)
     * [快捷菜单](#快捷菜单)
@@ -22,13 +22,10 @@
       * [测试模式](#测试模式)
     * [收藏夹](#收藏夹)
     * [错题本](#错题本)
-* [关于题目来源 :triangular_flag_on_post:](#关于题目来源)
-* [开发者名单 :octocat:](#开发者名单)
-* [项目基本信息 :milky_way:](#项目基本信息)
-* [关于我们可爱的大家庭还有点东西想说 :family:](#关于我们可爱的大家庭还有点东西想说)
-
-
-
+* [:triangular_flag_on_post: 关于题目来源 ](#关于题目来源)
+* [:octocat: 开发者名单 ](#开发者名单)
+* [:floppy_disk: 项目基本信息 ](#项目基本信息)
+* [:family: 关于我们可爱的大家庭还有点东西想说 ](#关于我们可爱的大家庭还有点东西想说)
 
 ---
 ## 软件使用指南
@@ -77,25 +74,71 @@
 ---
 ### 启动界面
 
-启动界面默认为[查询界面](#查询功能与结果)。
-
-在这里您可以根据“题干”信息查询相关的题目；
-
-主页的左上角为[快捷菜单](#快捷菜单)，菜单中有测试记录、本程序的一些碎碎念、各种清除选项；
-
-到目前估计您还是一头雾水，不过不着急，下面会逐渐展开！:smile:  [返回目录](#目录导航)
+   启动界面默认为[查询界面](#查询功能与结果)。
+   在这里您可以根据“题干”信息查询相关的题目；
+   主页的左上角为[快捷菜单](#快捷菜单)，菜单中有测试记录、本程序的一些碎碎念、各种清除选项；
+   到目前估计您还是一头雾水，不过不着急，下面会逐渐展开！:smile:  [返回目录](#目录导航)
 
 ![启动界面](https://s3.ax1x.com/2021/01/26/sjUY1s.jpg)
 
 ---
+### 快捷菜单
 
 
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+            
+---
+### 查询功能与结果
 
 
-
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
 
 ---
-## 关于题目来源
+### 题库功能
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+### 关于题目来源
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+#### 练习模式
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+#### 测试模式
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+### 收藏夹
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+### 错题本
+
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
+---
+
+
+
+
+
+
+
+
+
 
 :smile_cat: 题库来自第一临床医学院(信息与工程学院)  2011级临床医学11班所编十门联考习题册
 
