@@ -51,6 +51,36 @@
 注2：虽然但是~为了便于与纸质版对照，我们并未改变题目的顺序，敬请谅解！:sweat_smile:
 
 ### 软件使用指南
+#### 图标名解
+
+软件中所有的图标含义统一，因此我们觉得您有必要先行了解图标的含义，以便快速开展工作
+
+![练习模式](https://s3.ax1x.com/2021/01/26/sjUQ78.png) :heavy_check_mark:练习模式，点此图标进入相应模块练习
+
+![测试模式](https://s3.ax1x.com/2021/01/26/sjUCm6.png) :heavy_check_mark:测试模式，点此图标进入相应模块考试
+
+![上一题](https://s3.ax1x.com/2021/01/26/sjNHmV.png) :heavy_check_mark:上一题，点此跳转上一道题
+
+![下一题](https://s3.ax1x.com/2021/01/26/sjUEfH.png) :heavy_check_mark:下一题，点此跳转下一道题
+
+![答题卡](https://s3.ax1x.com/2021/01/26/sjU8hQ.png) :heavy_check_mark:答题卡，点此查看已做题目，跳转题目
+
+![收藏夹](https://s3.ax1x.com/2021/01/26/sjNbwT.png) :heavy_check_mark:收藏夹，点此将当前题目收藏至收藏夹
+
+![清空历史记录](https://s3.ax1x.com/2021/01/26/sjNTO0.png) :heavy_check_mark:清空历史记录，点此清空当前模块已做记录
+
+![提交](https://s3.ax1x.com/2021/01/26/sjUnXt.png) :heavy_check_mark:提交，点此提交本题答案或结束考试
+
+![按钮_提交](https://s3.ax1x.com/2021/01/26/sjUkkD.png) :heavy_check_mark:多功能按钮_提交，当本题未作答时显示
+
+![按钮_下一题](https://s3.ax1x.com/2021/01/26/sjUZpd.png) :heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
+
+![按钮_最后一题](https://s3.ax1x.com/2021/01/26/sjUM0f.png) :heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
+
+![按钮_最后一题，提交](https://s3.ax1x.com/2021/01/26/sjUm6I.png) :heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题时显示
+
+![按钮_结束考试](https://s3.ax1x.com/2021/01/26/sjNqTU.png) :heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
+
 #### 启动界面
 
 启动界面默认为[查询界面](#查询功能与结果)。
@@ -62,13 +92,6 @@
 到目前估计您还是一头雾水，不过不着急，下面会逐渐展开！:smile:  [返回目录](#目录导航)
 
 ![启动界面](https://s3.ax1x.com/2021/01/26/sjUY1s.jpg)
-
-#### 图标名解
-
-软件中所有的图标含义统一，因此我们觉得您有必要先行了解图标的含义，以便快速开展工作
-
-![启动界面](https://s3.ax1x.com/2021/01/26/sjUQ78.png) :heavy_check_mark:练习模式
-
 
 
 
