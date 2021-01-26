@@ -56,6 +56,8 @@
 
 注2：虽然但是~为了便于与纸质版对照，我们并未改变题目的顺序，敬请谅解！:sweat_smile:
 
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
+
 ---
 ## 软件使用指南
 ### 图标名解
@@ -98,7 +100,7 @@
 
 :heavy_check_mark:多功能按钮，测试模式中最后一题已做答时显示
 
-   [芜湖~点此返回目录](#目录导航)
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
             
 ---
 ### 启动界面
