@@ -80,25 +80,25 @@
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUkkD.png" width="300" alt="按钮_提交"/>
 
-:heavy_check_mark:多功能按钮_提交，当本题未作答时显示
+:heavy_check_mark:多功能按钮，当本题未作答时显示
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUZpd.png" width="300" alt="按钮_下一题"/>
 
-:heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
+:heavy_check_mark:多功能按钮，当本题已作答时显示
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUM0f.png" width="300" alt="按钮_最后一题"/>
 
-:heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
+:heavy_check_mark:多功能按钮，当本题为最后一题时显示
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUm6I.png" width="300" alt="按钮_最后一题，提交"/>
 
-:heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题未作答时显示
+:heavy_check_mark:多功能按钮，测试模式中最后一题未作答时显示
 
 <img src="https://s3.ax1x.com/2021/01/26/sjNqTU.png" width="300" alt="按钮_结束考试"/>
 
-:heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
+:heavy_check_mark:多功能按钮，测试模式中最后一题已做答时显示
 
-            [芜湖~点此返回目录](#目录导航)
+   [芜湖~点此返回目录](#目录导航)
             
 ---
 ### 启动界面
