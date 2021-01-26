@@ -248,16 +248,15 @@
 ---
 ## 关于本程序以及我们大家庭还有点话想说
 
-:grin:感谢原架构开发者@萧利丹 [![GitHub主页](https://img.shields.io/badge/Originated_by-xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
+:grin:感谢原架构开发者[![GitHub主页](https://img.shields.io/badge/Originated_by-xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
 
 :clap:感谢`温州医科大学历届学长学姐`为整套题库做出的贡献，以及`学长J`前期开发的几个版本软件
 
 :+1:感谢`第一临床医学院信息与工程学院 2017级 临床医学（5+3）一体化 1班`的各位协作组成员们
 
-ps:这个软件一开始是想写给本班同学们的，希望各位村里小屁孩十门联考都能取得好成绩！
+:monkey_face:这个软件一开始是想写给本班同学们的，希望各位村里小屁孩十门联考都能取得好成绩！
 
-当然这个软件在J学长软件的基础上增加了`题目解析`等新功能，并且也开源了工程，所以也欢迎所有使用本软件的同学，并预祝考试顺利！
+:airplane:当然这个软件在J学长软件的基础上增加了`题目解析`等新功能，并且也开源了工程，所以也欢迎所有使用本软件的同学，并预祝考试顺利！
 
-此外您若是发现程序有什么BUG或题目问题，请不吝提交建议，也欢迎各位有志之士加入软件的开发中，为温医学子们做出力所能及的贡献！
-
-错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
+>此外您若是发现程序有什么BUG或题目问题，请不吝提交建议，也欢迎各位有志之士加入软件的开发中，为温医学子们做出力所能及的贡献！
+>>错误及建议提交网址[  --> GitHub Issue <--](https://github.com/jerryzuo0214/Integrated_Examination_Of_Ten_Subjects_WMU/issues)
