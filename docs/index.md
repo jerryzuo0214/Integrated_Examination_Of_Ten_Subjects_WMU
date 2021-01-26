@@ -94,18 +94,18 @@
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUe1A.jpg" width="340" alt="快捷菜单"/>
 
->`测试记录`功能可供后期查阅之前的测试结果，包括分数、时间、所属题库等等；想清空测试记录，您可以点击本菜单中的`清空测试记录`。
+`测试记录`功能可供后期查阅之前的测试结果，包括分数、时间、所属题库等等；想清空测试记录，您可以点击本菜单中的`清空测试记录`。
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUP0K.jpg" width="340" alt="测试记录"/>
 
->`帮助与碎碎念`功能简要介绍了本程序的缘起并对程序框架的开发者进行了致谢。
+`帮助与碎碎念`功能简要介绍了本程序的缘起并对程序框架的开发者进行了致谢。
 
 <img src="https://s3.ax1x.com/2021/01/26/sjUKnP.jpg" width="340" alt="帮助"/>
 
->`各类清除选项`给了大家机会去清除做题的记录，以便重新刷题。
->>我们设计的逻辑是这样子的，在练习模式中，已经做过的题目会保存答案并记录进度，因此您在下一次进入练习模式后可以简便的在
+`各类清除选项`给了大家机会去清除做题的记录，以便重新刷题。
+>我们设计的逻辑是这样子的，在练习模式中，已经做过的题目会保存答案并记录进度，因此您在下一次进入练习模式后可以简便的在
 <img src="https://s3.ax1x.com/2021/01/26/sjU8hQ.png" width="20" alt="答题卡"/>`答题卡`中确认已经做过的题并选择没做过的题目继续练习，当您做完所有的题目后想重新再练习，您或许需要此功能来清除记录。当然，如果您需要把收藏夹或错题本清空，这里也有相应的选项。
->>>！！WARNING ！！`清空练习记录`选项会把所有科目的练习记录全部清空，因此应慎重选择，如果您想清空单独一个科目的练习记录，请去该科目的练习模式中点击<img src="https://s3.ax1x.com/2021/01/26/sjNTO0.png" width="20" alt="清空记录"/>`清空记录`按钮进行清空哦！！
+>>！WARNING ！`清空练习记录`选项会把所有科目的练习记录全部清空，因此应慎重选择，如果您想清空单独一个科目的练习记录，请去该科目的练习模式中点击<img src="https://s3.ax1x.com/2021/01/26/sjNTO0.png" width="20" alt="清空记录"/>`清空记录`按钮进行清空哦！！
 
 :airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
             
@@ -146,7 +146,7 @@
 ---
 #### 练习模式
 
->开始练习后界面如下所示，所有的图标含义已在[图标名解](#图标名解)中详细说明。
+开始练习后界面如下所示，所有的图标含义已在[图标名解](#图标名解)中详细说明。
 
 >练习模式中选好选项后点击多功能按钮显示答案，多功能按钮会显示`下一题`，点击可进入下一题，在最后一题时显示`最后一题`。
 
@@ -161,7 +161,7 @@
 ---
 #### 测试模式
 
->开始测试后界面如下所示，所有的图标含义已在[图标名解](#图标名解)中详细说明。
+开始测试后界面如下所示，所有的图标含义已在[图标名解](#图标名解)中详细说明。
 
 >测试模式中选好选项后点击多功能按钮显示答案，多功能按钮会显示`下一题`，点击可进入下一题，在最后一题时显示`最后一题，提交`，选好选项并点击按钮后，会显示`结束考试`，点击即可交卷。
 
@@ -222,7 +222,20 @@
 
 :airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
 
+---
+## 开发者名单
 
+数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
+
+数据库构建 @Xingzhenqiu    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-Xingzhenqiu-blue)](https://github.com/Xingzhenqiu)
+ 
+数据库构建 @yy-skr   [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-yy_skr-blue)](https://github.com/yy-skr)
+ 
+界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Interface_Developed_by-linandxi-yellow)](https://github.com/linandxi)
+ 
+后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Application_Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
+
+:airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
 
 
 
