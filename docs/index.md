@@ -54,7 +54,7 @@
 #### 图标名解
 
 软件中所有的图标含义统一，因此我们觉得您有必要先行了解图标的含义，以便快速开展工作
-
+<img src="https://s3.ax1x.com/2021/01/26/sjUQ78.png" width="100" alt="练习模式"/>
 ![练习模式](https://s3.ax1x.com/2021/01/26/sjUQ78.png){:height="100" width="100"} :heavy_check_mark:练习模式，点此图标进入相应模块练习
 
 ![测试模式](https://s3.ax1x.com/2021/01/26/sjUCm6.png) :heavy_check_mark:测试模式，点此图标进入相应模块考试
