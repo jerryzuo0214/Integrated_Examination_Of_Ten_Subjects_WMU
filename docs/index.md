@@ -85,7 +85,7 @@
 
 到目前估计您还是一头雾水，不过不着急，下面会逐渐展开！:smile: 
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUY1s.jpg" width="300" alt="启动界面"/>
+<img src="https://s3.ax1x.com/2021/01/26/sjUY1s.jpg" width="340" alt="启动界面"/>
 
 :airplane::airplane::airplane:[芜湖~点此返回目录](#目录导航):airplane::airplane::airplane:
 
@@ -94,11 +94,11 @@
 
 快捷菜单的引出方式是在[启动界面](#启动界面)左上四分之一从边缘向右划或者点击主屏幕左上角的三道杠，这里面有测试记录、本程序的一些碎碎念、各种清除选项。
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUe1A.jpg" width="300" alt="快捷菜单"/>
+<img src="https://s3.ax1x.com/2021/01/26/sjUe1A.jpg" width="340" alt="快捷菜单"/>
 
 >`测试记录`功能可供后期查阅之前的测试结果，包括分数、时间、所属题库等等；想清空测试记录，您可以点击本菜单中的`清空测试记录`。
 
-<img src="https://s3.ax1x.com/2021/01/26/sjUP0K.jpg" width="300" alt="测试记录"/>
+<img src="https://s3.ax1x.com/2021/01/26/sjUP0K.jpg" width="340" alt="测试记录"/>
 
 >`帮助与碎碎念`功能简要介绍了本程序的缘起并对程序框架的开发者进行了致谢。
 
