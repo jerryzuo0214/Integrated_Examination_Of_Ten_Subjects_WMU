@@ -54,32 +54,32 @@
 #### 图标名解
 
 软件中所有的图标含义统一，因此我们觉得您有必要先行了解图标的含义，以便快速开展工作
-<img src="https://s3.ax1x.com/2021/01/26/sjUQ78.png" width="50" alt="练习模式"/>
-![练习模式](https://s3.ax1x.com/2021/01/26/sjUQ78.png){:height="100" width="100"} :heavy_check_mark:练习模式，点此图标进入相应模块练习
 
-![测试模式](https://s3.ax1x.com/2021/01/26/sjUCm6.png) :heavy_check_mark:测试模式，点此图标进入相应模块考试
+<img src="https://s3.ax1x.com/2021/01/26/sjUQ78.png" width="50" alt="练习模式"/>:heavy_check_mark:练习模式，点此图标进入相应模块练习
 
-![上一题](https://s3.ax1x.com/2021/01/26/sjNHmV.png) :heavy_check_mark:上一题，点此跳转上一道题
+<img src="https://s3.ax1x.com/2021/01/26/sjUCm6.png" width="50" alt="测试模式"/>:heavy_check_mark:测试模式，点此图标进入相应模块考试
 
-![下一题](https://s3.ax1x.com/2021/01/26/sjUEfH.png) :heavy_check_mark:下一题，点此跳转下一道题
+<img src="https://s3.ax1x.com/2021/01/26/sjNHmV.png" width="50" alt="上一题"/>:heavy_check_mark:上一题，点此跳转上一道题
 
-![答题卡](https://s3.ax1x.com/2021/01/26/sjU8hQ.png) :heavy_check_mark:答题卡，点此查看已做题目，跳转题目
+<img src="https://s3.ax1x.com/2021/01/26/sjUEfH.png" width="50" alt="下一题"/>:heavy_check_mark:下一题，点此跳转下一道题
 
-![收藏夹](https://s3.ax1x.com/2021/01/26/sjNbwT.png) :heavy_check_mark:收藏夹，点此将当前题目收藏至收藏夹
+<img src="https://s3.ax1x.com/2021/01/26/sjU8hQ.png" width="50" alt="答题卡"/>:heavy_check_mark:答题卡，点此查看已做题目，跳转题目
 
-![清空历史记录](https://s3.ax1x.com/2021/01/26/sjNTO0.png) :heavy_check_mark:清空历史记录，点此清空当前模块已做记录
+<img src="https://s3.ax1x.com/2021/01/26/sjNbwT.png" width="50" alt="收藏夹"/>:heavy_check_mark:收藏夹，点此将当前题目收藏至收藏夹
 
-![提交](https://s3.ax1x.com/2021/01/26/sjUnXt.png) :heavy_check_mark:提交，点此提交本题答案或结束考试
+<img src="https://s3.ax1x.com/2021/01/26/sjNTO0.png" width="50" alt="清空历史记录"/>:heavy_check_mark:清空历史记录，点此清空当前模块已做记录
 
-![按钮_提交](https://s3.ax1x.com/2021/01/26/sjUkkD.png) :heavy_check_mark:多功能按钮_提交，当本题未作答时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUnXt.png" width="50" alt="提交"/>:heavy_check_mark:提交，点此提交本题答案或结束考试
 
-![按钮_下一题](https://s3.ax1x.com/2021/01/26/sjUZpd.png) :heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUkkD.png" width="50" alt="按钮_提交"/>:heavy_check_mark:多功能按钮_提交，当本题未作答时显示
 
-![按钮_最后一题](https://s3.ax1x.com/2021/01/26/sjUM0f.png) :heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUZpd.png" width="50" alt="按钮_下一题"/>:heavy_check_mark:多功能按钮_下一题，当本题已作答时显示
 
-![按钮_最后一题，提交](https://s3.ax1x.com/2021/01/26/sjUm6I.png) :heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUM0f.png" width="50" alt="按钮_最后一题"/>:heavy_check_mark:多功能按钮_最后一题，当本题为最后一题时显示
 
-![按钮_结束考试](https://s3.ax1x.com/2021/01/26/sjNqTU.png) :heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
+<img src="https://s3.ax1x.com/2021/01/26/sjUm6I.png" width="50" alt="按钮_最后一题，提交"/>:heavy_check_mark:多功能按钮_最后一题，提交，测试模式中最后一题时显示
+
+<img src="https://s3.ax1x.com/2021/01/26/sjNqTU.png" width="50" alt="按钮_结束考试"/>:heavy_check_mark:多功能按钮_结束考试，测试模式中最后一题已做答时显示
 
 #### 启动界面
 
