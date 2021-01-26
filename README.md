@@ -1,4 +1,4 @@
-# 温州医科大学 十门联考刷题软件
+# 温州医科大学 十门联考2021
 
 帮助页面 [![GitHubPage](https://img.shields.io/badge/Powered_by_GitHub_Page-jerryzuo0214.github.io-green)](https://jerryzuo0214.github.io/Integrated_Examination_Of_Ten_Subjects_WMU/)
 
