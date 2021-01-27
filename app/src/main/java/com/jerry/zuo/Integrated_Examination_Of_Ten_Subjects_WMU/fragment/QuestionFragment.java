@@ -99,7 +99,7 @@ public class QuestionFragment extends Fragment implements View.OnClickListener {
     }
 //加载内容到列表
     private void queList(final String type) {
-        cursor = ToolHelper.loadDB(getActivity(), "select que._id, que." + type + ",count(que._id) as num from " + table + " group by que." + type+" order by source desc");
+        cursor = ToolHelper.loadDB(getActivity(), "select que._id, que." + type + ",count(que._id) as num from " + table + " group by que." + type+" order by que._id");//source desc
         if (cursor.getCount() > 0) {
             if (!tag) {
                 adapter = new SimpleCursorAdapter(getActivity(), R.layout.listitem, cursor,
