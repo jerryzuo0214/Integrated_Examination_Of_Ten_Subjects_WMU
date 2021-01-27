@@ -15,7 +15,7 @@ import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.R;
 import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.hepler.ToolHelper;
 
 /**
- * Created by Administrator on 2018/1/7.
+ * Created by Administrator on 2021/1/27.
  */
 
 public class DetailActivity extends AppCompatActivity {
