@@ -162,11 +162,17 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
                 for(progress_dist.moveToFirst();!progress_dist.isAfterLast();progress_dist.moveToNext())
                 {
                     String progress_item = progress_dist.getString(progress_dist.getColumnIndex("dist_d"));
-                    anList.add(progress_item);
+                    if(progress_item==null){anList.add("");}
+                    else if(progress_item.contains("A")){anList.add("A");}
+                    else if(progress_item.contains("B")){anList.add("B");}
+                    else if(progress_item.contains("C")){anList.add("C");}
+                    else if(progress_item.contains("D")){anList.add("D");}
+                    else if(progress_item.contains("E")){anList.add("E");}
+                    else {anList.add("");}
                     progress_total++;
                 }
                 if(progress_total!=num) {
-                    for(int j = progress_total; j<num;j++) {
+                    for(int j = progress_total; j<num ;j++) {
                         anList.add(""); }
                     }
             }
