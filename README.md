@@ -8,7 +8,8 @@
 
 :+1:感谢`第一临床医学院信息与工程学院 2017级 临床医学（5+3）一体化 1班`的各位协作组成员们
 
-  #####################开发者名单（不分先后）#####################
+---
+######## 开发者名单（不分先后）########
 
 数据库构建 @MorganLYJ    [![GitHub主页](https://img.shields.io/badge/Database_Developed_by-MorganLYJ-blue)](https://github.com/MorganLYJ)
 
@@ -19,5 +20,5 @@
 界面美化与前端设计 @linandxi   [![GitHub主页](https://img.shields.io/badge/Interface_Developed_by-linandxi-yellow)](https://github.com/linandxi)
  
 后端开发与调试 @jerryzuo0214   [![GitHub主页](https://img.shields.io/badge/Application_Developed_by-jerryzuo0214-brightgreen)](https://github.com/jerryzuo0214)
- 
- #############################################################
+
+---
