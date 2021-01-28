@@ -101,12 +101,18 @@ public class PracticeActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void getProgress(String t) {
-        index1=sp.getInt(t+"index",0);
+        if(t=="que"){
+        index1=sp.getInt(t+"_"+QuestionFragment.value+"_"+"index",0);}
+        else{
+            index1=sp.getInt(t+"index",0);}
     }
 
     private void saveProgess(String t) {
         SharedPreferences.Editor editor=sp.edit();
-        editor.putInt(t+"index",index);
+        if(t=="que"){
+            editor.putInt(t+"_"+QuestionFragment.value+"_"+"index",index);}
+        else{
+            editor.putInt(t+"index",index);}
         editor.commit();
     }
 
