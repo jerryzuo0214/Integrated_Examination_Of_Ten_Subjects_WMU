@@ -1,5 +1,9 @@
 # 温州医科大学 十门联考2021
 
+ -【BUG修复】感谢@rw996419的反馈，我们已修复不同题库间无法保存进度的问题，新版上线，请多关照！
+
+---
+
 帮助页面 [![GitHubPage](https://img.shields.io/badge/Powered_by_GitHub_Page-jerryzuo0214.github.io-green)](https://jerryzuo0214.github.io/Integrated_Examination_Of_Ten_Subjects_WMU/)
 
 :grin:感谢原架构开发者@萧利丹 [![GitHub主页](https://img.shields.io/badge/Originated_by-xiaolidan00-skyblue)](https://github.com/xiaolidan00)，项目引用自ta的项目https://github.com/xiaolidan00/question.git
