@@ -96,6 +96,7 @@
             android:layout_height="wrap_content"
             android:clickable="true"
             android:padding="8dp"
+            android:scrollHorizontally="false"
             android:textColor="@color/gray" />
 
     </LinearLayout>

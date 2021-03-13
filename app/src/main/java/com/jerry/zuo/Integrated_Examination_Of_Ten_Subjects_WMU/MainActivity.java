@@ -5,6 +5,7 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,9 +17,11 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.ExamActivity;
+import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.HelpActivity;
 import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SettingActivity;
 import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment.QuestionFragment;
 import com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.fragment.SearchFragment;
@@ -28,10 +31,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private TextView tv1, tv2, tv3, tv4;
     private Fragment fragment;
     private final int QUE=1,COLLECT=2,WRONG=3;
+    private SharedPreferences preferences;
+    private SharedPreferences.Editor editor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
+        preferences = getSharedPreferences("HelpActivity", MODE_PRIVATE);
+        // 判断是不是首次登录
+        if (preferences.getBoolean("firstStart", true)) {
+            editor = preferences.edit();
+            // 将登录标志位设置为false，下次登录时不在显示引导页
+            editor.putBoolean("firstStart", false);
+            editor.commit();
+            //跳转到引导页
+            Intent intent = new Intent();
+            intent.setClass(this, HelpActivity.class);
+            startActivity(intent);
+
+        }
+        //如果不是首次登录 启动mainactivity加载项
+
         initView();
         tv1 = findViewById(R.id.tv_search);
         tv1.setOnClickListener(this);
@@ -42,7 +63,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tv4 = findViewById(R.id.tv_wrong);
         tv4.setOnClickListener(this);
         setDefaultFragment();
-
     }
 
     private void initView() {
@@ -78,6 +98,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         switch (item.getItemId()){
+            case R.id.nav_help://帮助界面
+                Intent intent2=new Intent(this, HelpActivity.class);
+                startActivity(intent2);
+                break;
             case R.id.nav_exam://考试记录
                 Intent intent=new Intent(this, ExamActivity.class);
                 startActivity(intent);

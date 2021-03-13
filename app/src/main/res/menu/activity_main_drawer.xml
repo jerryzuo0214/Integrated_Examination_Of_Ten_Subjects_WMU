@@ -5,13 +5,17 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/settings"
+            android:title="使用帮助" />
+        <item
             android:id="@+id/nav_exam"
             android:icon="@drawable/exam"
             android:title="测试记录" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/settings"
-            android:title="帮助与碎碎念" />
+            android:title="致谢与碎碎念" />
         <item
             android:id="@+id/clear_all"
             android:icon="@drawable/ic_popup_disk_full"

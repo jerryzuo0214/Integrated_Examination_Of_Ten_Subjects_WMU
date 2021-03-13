@@ -23,6 +23,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.HelpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name="com.jerry.zuo.Integrated_Examination_Of_Ten_Subjects_WMU.activity.SearchActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

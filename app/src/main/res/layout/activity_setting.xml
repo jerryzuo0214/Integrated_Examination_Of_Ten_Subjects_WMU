@@ -12,34 +12,42 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:orientation="vertical">
 
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="//Integrated Examination Of Ten Subjects_WMU_2021//\n\n ******  Starry Night  ******"
-            android:textColor="@color/colorPrimaryDark"
-            android:textSize="16sp"
-            android:textStyle="italic" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
 
-        <TextView
-            android:id="@+id/tw4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:linksClickable="true"
-            android:text="@string/about_app"
-            android:textColor="@color/colorPrimaryDark"
-            android:textColorLink="@color/overlay"
-            android:typeface="normal"
-            android:gravity="center"
-            app:fontFamily="sans-serif" />
-    </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="16dp"
+                android:text="//Integrated Examination Of Ten Subjects_WMU_2021//\n\n ******  Starry Night  ******"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tw4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center"
+                android:linksClickable="true"
+                android:text="@string/about_app"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorLink="@color/overlay"
+                android:typeface="normal"
+                app:fontFamily="sans-serif" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="411dp"
+                android:layout_height="189dp"
+                android:background="#FFFFFF"
+                app:srcCompat="@drawable/home" />
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>

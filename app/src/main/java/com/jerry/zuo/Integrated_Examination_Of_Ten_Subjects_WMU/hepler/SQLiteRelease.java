@@ -30,6 +30,8 @@ public class SQLiteRelease {
     public SQLiteDatabase OpenDataBase() {
         try {
             String databaseFilename = DATABASE_PATH + "/" + DATABASE_FILENAME;
+            String helpFilename = DATABASE_PATH + "/" + "help1.jpg";
+
             File dir = new File(DATABASE_PATH);
             //判断SD卡下是否存在存放数据库的目录，如果不存在，新建目录
             if (!dir.exists()) {
@@ -46,6 +48,26 @@ public class SQLiteRelease {
                     //用于存放数据库信息的数据流
                     FileOutputStream fos = new FileOutputStream(
                             databaseFilename);
+                    byte[] buffer = new byte[8192];
+                    int count = 0;
+                    //把数据写入SD卡目录下
+                    while ((count = is.read(buffer)) > 0) {
+                        fos.write(buffer, 0, count);
+                    }
+                    fos.flush();
+                    fos.close();
+                    is.close();
+                }
+                //判断SD卡下是否存在存放help page，如果不存在，新建目录
+                if (!(new File(helpFilename)).exists()) {
+                    ///res/raw数据库作为输出流
+                    InputStream is = this.context.getResources().openRawResource(
+                            R.raw.help1);
+                    //测试用
+                    int size = is.available();
+                    //用于存放数据库信息的数据流
+                    FileOutputStream fos = new FileOutputStream(
+                            helpFilename);
                     byte[] buffer = new byte[8192];
                     int count = 0;
                     //把数据写入SD卡目录下
